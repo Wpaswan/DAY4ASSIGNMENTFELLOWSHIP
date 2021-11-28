@@ -8,6 +8,7 @@ while (cho != 'n')
     Console.WriteLine("\\t(((((((1.Employ attendance                   )))))))");
     Console.WriteLine("\\t(((((((2.Employee Wage per day               )))))))");
     Console.WriteLine("\\t(((((((3.Employee Wage Part time or full time)))))))");
+    Console.WriteLine("\\t(((((((4.Employee Wage according to job      )))))))");
 
     int ch = Convert.ToInt32(Console.ReadLine());
     switch (ch)
@@ -26,7 +27,10 @@ while (cho != 'n')
             EmployeeUseCase3 e3 = new EmployeeUseCase3();
             e3.input();
             break;
-           
+        case 4:
+            EmployeeUseCas4 e4 = new EmployeeUseCas4();
+            e4.input2();
+            break;
     }
     Console.WriteLine("\tEnter any key to continiue and n to stop");
     cho = Convert.ToChar(Console.ReadLine());
